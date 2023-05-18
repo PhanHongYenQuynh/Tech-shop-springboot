@@ -8,6 +8,7 @@ import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabas
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 
 import java.util.List;
+import java.util.Set;
 
 import static org.assertj.core.api.Assertions.assertThat;
 @EntityScan("com.shoptech.entity")
@@ -33,4 +34,5 @@ public class CategoryRepositoryTests {
 
         assertThat(category).isNotNull();
     }
+
 }
